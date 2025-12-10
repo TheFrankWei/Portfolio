@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Envelope, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { contentfulConfig } from "@/config/contentful";
 
 export default function Email() {
   const query = `query email($id: String!) {
@@ -13,7 +14,7 @@ export default function Email() {
       }
   }`;
   const variables = {
-    id: "42QKmqFjKN9M4lcKIfbann",
+    id: contentfulConfig.email,
   };
 
   const { data, error, isLoading } = useQuery<any>({
