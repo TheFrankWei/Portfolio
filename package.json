@@ -19,6 +19,7 @@
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "next": "14.0.4",
+    "node": "^20.19.6",
     "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
