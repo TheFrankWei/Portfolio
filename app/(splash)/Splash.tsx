@@ -27,7 +27,7 @@ export default function Splash() {
   return (
     <section
       id="home"
-      className="grid grid-cols-2 auto-rows-min md:auto-rows-auto"
+      className="grid grid-cols-2 auto-rows-min md:auto-rows-auto min-h-screen"
     >
       <div className="col-span-2 md:col-span-1  md:my-auto">
         <div className="">
