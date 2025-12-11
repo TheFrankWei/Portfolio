@@ -71,10 +71,6 @@ export default function ExperienceInfoTabs() {
           index: number
         ) => {
           experienceItems.push({
-            // title: item?.cvItemTitle,
-            // skills: item?.cvItemSkills,
-            // json: item?.cvItemDescription.json,
-            // link: item?.cvItemHyperlink,
             title: item?.cvItemTitle,
             value: item?.cvItemTitle,
             content: (
@@ -82,7 +78,7 @@ export default function ExperienceInfoTabs() {
                 {documentToReactComponents(item?.cvItemDescription.json, {
                   renderMark: {
                     [MARKS.ITALIC]: (text) => (
-                      <div className="dark:text-base-400 text-base-400 italic text-sm flex flex-row-reverse md:flex-row justify-between mb-2 ">
+                      <div className="dark:text-base-400 text-base-400 italic text-sm flex flex-row-reverse md:flex-row justify-between mb-2">
                         <div className="border-b hover:border-theme-hover dark:border-b-base-400 border-b-base-400 w-fit">
                           <LinkPreview url={item?.cvItemHyperlink}>
                             <LinkSimpleHorizontal
@@ -138,7 +134,7 @@ export default function ExperienceInfoTabs() {
       {data && (
         <Tabs
           tabs={tabs}
-          tabClassName="bg-neutral-100 dark:bg-neutral-400 border-l-2 border-b-2 w-full hover:text-theme rounded-none cursor-pointer mr-4"
+          tabClassName="bg-neutral-100 dark:bg-neutral-400 border-l-2 w-full hover:text-theme rounded-none cursor-pointer mr-4"
           activeTabClassName="border-l-2 border-b-2 border-theme-hover bg-neutral-200 dark:bg-neutral-300"
           containerClassName="text-lg md:text-xl mb-8 md:mb-0"
         />

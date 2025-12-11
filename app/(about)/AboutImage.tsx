@@ -59,10 +59,10 @@ export default function AboutImage() {
   return (
     images && (
       <ImagesSlider
-        className="h-[30rem] md:h-[50rem] rounded-md group transition-all"
+        className="h-[30rem] rounded-md group transition-all"
         images={images}
       >
-        {data?.about?.hoverPhoto?.url && (
+        {!!data?.about?.hoverPhoto?.url && (
           <div className="invisible group-hover:visible z-10">
             <Image
               src={data?.about?.hoverPhoto?.url}

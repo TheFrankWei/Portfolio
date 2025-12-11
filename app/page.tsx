@@ -9,21 +9,28 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main>
-      <Splash />
-      <Parallax>
-        <About />
-      </Parallax>
-      <Parallax>
-        <Experience />
-      </Parallax>
-      <Parallax>
-        <Contact />
-      </Parallax>
+    <>
+      <main>
+        <Splash />
+        <Parallax>
+          <About />
+        </Parallax>
+        <Parallax>
+          <Experience />
+        </Parallax>
+        <Parallax>
+          <Contact />
+        </Parallax>
 
-      {/* <motion.div drag className="cursor-move hidden md:block"> */}
-   
-      {/* </motion.div> */}
-    </main>
+        {/* <motion.div drag className="cursor-move hidden md:block"> */}
+
+        {/* </motion.div> */}
+      </main>
+      <footer>
+        <p className="mb-4 text-xs text-base-300">
+          This is not a commercial site.
+        </p>
+      </footer>
+    </>
   );
 }

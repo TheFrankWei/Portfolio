@@ -16,7 +16,7 @@
     @apply border-primary-200 dark:border-secondary-200 transition-colors;
   }
   .border-theme-hover {
-    @apply border-primary-100 dark:border-secondary-100;
+    @apply border-primary-100 dark:border-secondary-100 border-dotted;
   }
   .button-icon {
     @apply p-1;
