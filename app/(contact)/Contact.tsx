@@ -13,7 +13,11 @@ export default function Contact() {
   const contactRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section id="contact" className="flex flex-col overflow-hidden" ref={contactRef}>
+    <section
+      id="contact"
+      className="flex flex-col overflow-hidden min-h-[95vh]"
+      ref={contactRef}
+    >
       <motion.h4
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
