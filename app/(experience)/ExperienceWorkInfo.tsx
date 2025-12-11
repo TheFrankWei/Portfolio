@@ -14,6 +14,7 @@ import {
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { LinkPreview } from "@/components/LinkPreview";
+import { contentfulConfig } from "@/config/contentful";
 
 export default function ExperienceWorkInfo() {
   const [experienceTabState, setExperienceTab] = useState<string | undefined>(
@@ -38,7 +39,7 @@ export default function ExperienceWorkInfo() {
     }
   }`;
   const variables = {
-    id: "1adSOYfiZPzVqa67S4VLzC",
+    id: contentfulConfig.experienceWorkInfo,
   };
 
   const { data, error, isLoading } = useQuery<any>({

@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { Moon, Sun } from "@phosphor-icons/react";
 import { toggleDarkMode } from "@/public/scripts/darkMode";
 
-const LABELS = ["Software Developer", "Designer", "Photographer"];
+const LABELS = ["Software Developer"];
 
 export default function Splash() {
   const [darkState, setDarkState] = useState<boolean>(false);

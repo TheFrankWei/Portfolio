@@ -9,6 +9,7 @@ import { useBreakpoint } from "@/utils/hooks/useBreakpoint";
 import { motion } from "framer-motion";
 import { LinkPreview } from "@/components/LinkPreview";
 import { Pagination } from "@/components/Pagination";
+import { contentfulConfig } from "@/config/contentful";
 
 interface ProjectItemType {
   projectItemDescription: any;
@@ -42,7 +43,7 @@ export default function ExperienceProjectInfo() {
   }`;
 
   const variables = {
-    id: "2Ntf4X5iFJuQLlnbWXhbWM",
+    id: contentfulConfig.experienceProjectInfo,
   };
   const { isAboveMd, isBelowMd, md } = useBreakpoint("md");
 

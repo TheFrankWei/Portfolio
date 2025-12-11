@@ -4,6 +4,7 @@ import { request } from "graphql-request";
 import Link from "next/link";
 import { InstagramLogo, LinkedinLogo, GithubLogo } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
+import { contentfulConfig } from "@/config/contentful";
 
 export default function ContactInfo() {
   const query = `query contact($id: String!) {
@@ -20,7 +21,7 @@ export default function ContactInfo() {
     }
   }`;
   const variables = {
-    id: "4o3VD5QaRA0fKpQHUh8uNc",
+    id: contentfulConfig.contact,
   };
 
   const { data, error, isLoading } = useQuery<any>({
